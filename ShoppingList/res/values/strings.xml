@@ -4,5 +4,866 @@
     <string name="app_name">ShoppingList</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+  	
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="availMoney">Amount to Spend</string>
+    <string name="job">Occupation</string>
+    <string name="gender">Gender</string>
+    <string name="email">Email</string>
+    
+    
+    <string-array name="jobList">
+        <item>Accounts Assistant</item>
+		<item>Accounts Clerk</item>
+		<item>Aviation Security</item>
+		<item>Abattoir Worker</item>
+		<item>Accommodation Officer</item>
+		<item>Accountant</item>
+		<item>Actor</item>
+		<item>Actress</item>
+		<item>Actuary</item>
+		<item>Acupuncturist</item>
+		<item>Administration Staff</item>
+		<item>Advertising Contractor</item>
+		<item>Aerial Erector</item>
+		<item>Agricultural Contractor</item>
+		<item>Air Corps</item>
+		<item>Air Traffic</item>
+		<item>Aircraft Buyer</item>
+		<item>Aircraft Designer</item>
+		<item>Airline Check</item>
+		<item>Airline Staff</item>
+		<item>Airport Groundstaff</item>
+		<item>Airport Maintenance</item>
+		<item>Airport Police</item>
+		<item>Alarm Installer</item>
+		<item>Almoner</item>
+		<item>Ambulance Crew</item>
+		<item>Ambulance Driver</item>
+		<item>Amusement Arcade</item>
+		<item>Amusement Arcade</item>
+		<item>Anaesthetist</item>
+		<item>Animal Breeder</item>
+		<item>Animal Trainer</item>
+		<item>Antique Dealer</item>
+		<item>Applications Programmer</item>
+		<item>Arbitrator</item>
+		<item>Archaeologist</item>
+		<item>Architect</item>
+		<item>Archivist</item>
+		<item>Army</item>
+		<item>Art Critic</item>
+		<item>Art Dealer</item>
+		<item>Artificial Inseminator</item>
+		<item>Artist</item>
+		<item>Asphalter</item>
+		<item>Assembly Worker</item>
+		<item>Astrologer</item>
+		<item>Astronomer</item>
+		<item>Au Pair</item>
+		<item>Auctioneer</item>
+		<item>Audiologist</item>
+		<item>Auditor</item>
+		<item>Author</item>
+		<item>Auto Electrician</item>
+		<item>Auxiliary Nurse</item>
+		<item>Beauty Consultant</item>
+		<item>Bacon Curer</item>
+		<item>Baggage Handler</item>
+		<item>Bailiff</item>
+		<item>Baker</item>
+		<item>Bank Staff</item>
+		<item>Bar Manager</item>
+		<item>Barber</item>
+		<item>Barmaid</item>
+		<item>Barman</item>
+		<item>Barrister</item>
+		<item>Beautician</item>
+		<item>Betting Shop</item>
+		<item>Bill Poster</item>
+		<item>Biochemist</item>
+		<item>Biologist</item>
+		<item>Blacksmith</item>
+		<item>Blinds Installer</item>
+		<item>Boat Builder</item>
+		<item>Boiler Maker</item>
+		<item>Boiler Man</item>
+		<item>Book Binder</item>
+		<item>Book Seller</item>
+		<item>Book</item>
+		<item>Botanist</item>
+		<item>Breadman</item>
+		<item>Brewer</item>
+		<item>Brewery Worker</item>
+		<item>Bricklayer</item>
+		<item>Broadcaster</item>
+		<item>Builder</item>
+		<item>Builder Merchant</item>
+		<item>Builders Labourer</item>
+		<item>Building Contractor</item>
+		<item>Building Foreman</item>
+		<item>Building Inspector</item>
+		<item>Building Surveyor</item>
+		<item>Bursar</item>
+		<item>Bus Conductor</item>
+		<item>Bus Driver</item>
+		<item>Butcher</item>
+		<item>Butler</item>
+		<item>Buyer</item>
+		<item>Business Analyst</item>
+		<item>Cabin Crew</item>
+		<item>Childcare Creche</item>
+		<item>Creche Montessori</item>
+		<item>Curtain Maker</item>
+		<item>Customer Service</item>
+		<item>C</item>
+		<item>Cabinet Maker</item>
+		<item>Calligrapher</item>
+		<item>Cameraman</item>
+		<item>Car Body</item>
+		<item>Car Builder</item>
+		<item>Car Dealer</item>
+		<item>Car Delivery</item>
+		<item>Car Park</item>
+		<item>Car Salesman</item>
+		<item>Car Valet</item>
+		<item>Care Assistant</item>
+		<item>Care Supervisor</item>
+		<item>Careers Officer</item>
+		<item>Caretaker</item>
+		<item>Carpenter</item>
+		<item>Carpetfitter</item>
+		<item>Cartographer</item>
+		<item>Cartoonist</item>
+		<item>Cashier</item>
+		<item>Casual Worker</item>
+		<item>Caterer</item> 
+		<item>Catering Trade</item>
+		<item>Caulker</item>
+		<item>Certified Accountant</item>
+		<item>Chambermaid</item>
+		<item>Chandler</item>
+		<item>Charge Hand</item>
+		<item>Charity Worker</item>
+		<item>Chartered Surveyor</item>
+		<item>Charterer</item>
+		<item>Chauffeur</item>
+		<item>Chef</item>
+		<item>Chemist</item>
+		<item>Chicken Sexer</item>
+		<item>Child Minder</item>
+		<item>Childrens Entertainer</item>
+		<item>Chimney Sweep</item>
+		<item>Chiropodist</item>
+		<item>Chiropractor</item>
+		<item>Choreographer</item>
+		<item>Church Officer</item>
+		<item>Church Warden</item>
+		<item>Cinema Assistant</item>
+		<item>Circus Proprietor</item>
+		<item>Circus Worker</item>
+		<item>Civil Servant</item>
+		<item>Claims Adjuster</item>
+		<item>Claims Assessor</item>
+		<item>Classroom Aide</item>
+		<item>Cleaner</item>
+		<item>Clergyman</item>
+		<item>Cleric</item>
+		<item>Clerical Officer</item>
+		<item>Clerk</item>
+		<item>Clock Maker</item>
+		<item>Club Steward</item>
+		<item>Coach Builder</item>
+		<item>Coach Driver</item>
+		<item>Coal Merchant</item>
+		<item>Coastguard</item>
+		<item>Cobbler</item>
+		<item>Commercial Artist</item>
+		<item>Commercial Traveller</item>
+		<item>Commission Agent</item>
+		<item>Commissionaire</item>
+		<item>Commissioned Officer</item>
+		<item>Commodity Broker</item>
+		<item>Commodity Dealer</item>
+		<item>Community Worker</item>
+		<item>Company Secretary</item>
+		<item>Complementary Therapist</item>
+		<item>Composer</item>
+		<item>Compositor</item>
+		<item>Computer Analyst</item>
+		<item>Computer Consultant</item>
+		<item>Computer Operator</item>
+		<item>Computer Programmer</item>
+		<item>Confectioner</item>
+		<item>Construction Worker</item>
+		<item>Consultant</item>
+		<item>Contractor</item>
+		<item>Conveyancer</item>
+		<item>Cook</item>
+		<item>Cooper</item>
+		<item>Coppersmith</item>
+		<item>Copywriter</item>
+		<item>Coroner</item>
+		<item>Council Worker</item>
+		<item>Counsellor</item>
+		<item>County Councillor</item>
+		<item>Courier</item>
+		<item>Court Officer</item>
+		<item>Craftsman</item>
+		<item>Crane Driver</item>
+		<item>Crane Operator</item>
+		<item>Credit Controller</item>
+		<item>Credit Draper</item>
+		<item>Croupier</item>
+		<item>Curator</item>
+		<item>Customer Liaison</item>
+		<item>Customs</item> 
+		<item>Cutler</item>
+		<item>Cutter</item>
+		<item>Call Centre</item>
+		<item>Checkout Clerk</item>
+		<item>Director</item> 
+		<item>Dairy Worker</item>
+		<item>Dance Teacher</item>
+		<item>Dancer</item>
+		<item>Dark Room</item>
+		<item>Dealer</item> 
+		<item>Debt Collector</item>
+		<item>Decorator</item>
+		<item>Delivery Courier</item>
+		<item>Delivery Roundsman</item>
+		<item>Demolition Worker</item>
+		<item>Demonstrator</item>
+		<item>Dental Assistant</item>
+		<item>Dental Hygienist</item>
+		<item>Dental Nurse</item>
+		<item>Dental Surgeon</item>
+		<item>Dental Technician</item>
+		<item>Dentist</item>
+		<item>Dermatologist</item>
+		<item>Despatch Driver</item>
+		<item>Despatch Rider</item>
+		<item>Despatch Worker</item>
+		<item>Dietician</item>
+		<item>Dinner Lady</item>
+		<item>Diplomat</item> 
+		<item>Diplomatic Staff</item>
+		<item>Diplomatic Staff</item>
+		<item>Director</item> 
+		<item>Director</item> 
+		<item>Director</item> 
+		<item>Disc Jockey</item>
+		<item>District Nurse</item>
+		<item>Diver</item>
+		<item>Docker</item>
+		<item>Dockyard Worker</item>
+		<item>Doctor</item>
+		<item>Dog Groomer</item>
+		<item>Door To</item>
+		<item>Doorman</item>
+		<item>Double Glazing</item>
+		<item>Double Glazing</item>
+		<item>Draper</item>
+		<item>Draughtsman</item>
+		<item>Dressmaker</item>
+		<item>Driving Examiner</item>
+		<item>Driving Instructor</item>
+		<item>Dry Cleaner</item>
+		<item>Dustman</item>
+		<item>Dyer</item>
+		<item>Database Administrator</item>
+		<item>Doorman</item> 
+		<item>Defence Forces</item>
+		<item>Economist</item>
+		<item>Editor</item>
+		<item>Editor</item> 
+		<item>Electrical Contractor</item>
+		<item>Electrician</item>
+		<item>Embalmer</item>
+		<item>Embassy Staff</item>
+		<item>Embassy Staff</item>
+		<item>Embassy Staff</item>
+		<item>Energy Analyst</item>
+		<item>Engineer</item>
+		<item>Engraver</item>
+		<item>Entertainer</item>
+		<item>Environmental Health</item>
+		<item>Estate Agent</item>
+		<item>Estimator</item>
+		<item>Evangelist</item>
+		<item>Exhaust Fitter</item>
+		<item>Exhibition Organiser</item>
+		<item>Exotic Dancer</item>
+		<item>Exporter</item>
+		<item>Event Promoter</item>
+		<item>Fire Service</item>
+		<item>Funds Manager</item>
+		<item>Fabricator</item>
+		<item>Factory Inspector</item>
+		<item>Factory Worker</item>
+		<item>Fairground Worker</item>
+		<item>Farm Worker</item>
+		<item>Farmer</item>
+		<item>Farrier</item>
+		<item>FAS Trainee</item>
+		<item>FAS Trainer</item>
+		<item>Fashion Designer</item>
+		<item>Fast Food</item>
+		<item>Fence Erecter</item>
+		<item>Fibre Glass</item>
+		<item>Film Producer</item>
+		<item>Finance Controller</item>
+		<item>Financial Advisor</item>
+		<item>Financial Analyst</item>
+		<item>Financier</item>
+		<item>Fire Officer</item>
+		<item>Firefighter</item>
+		<item>Firewoman</item>
+		<item>Firewood Merchant</item>
+		<item>Fish Farmer</item>
+		<item>Fish Filleter</item>
+		<item>Fish Fryer</item>
+		<item>Fisherman</item>
+		<item>Fishmonger</item>
+		<item>Fitter</item>
+		<item>Fitter</item> 
+		<item>Floor Layer</item>
+		<item>Florist</item>
+		<item>Flying Instructor</item>
+		<item>Food Processor</item>
+		<item>Foreman</item>
+		<item>Forester</item>
+		<item>Fork Lift</item>
+		<item>Forwarding Agent</item>
+		<item>Foundry Worker</item>
+		<item>French Polisher</item>
+		<item>Fruiterer</item>
+		<item>Fuel Merchant</item>
+		<item>Fund Raiser</item>
+		<item>Funeral Director</item>
+		<item>Funeral Furnisher</item>
+		<item>Furnace Man</item>
+		<item>Furniture Dealer</item>
+		<item>Furniture Manufacturer</item>
+		<item>Furniture Remover</item>
+		<item>Furniture Restorer</item>
+		<item>Furrier</item>
+		<item>Fitness Instructor</item>
+		<item>Flower Arranger</item>
+		<item>Gam</item>
+		<item>Gam</item>
+		<item>Gambling Club</item>
+		<item>Gamekeeper</item>
+		<item>Garage Foreman</item>
+		<item>Garda</item>
+		<item>Gardener</item>
+		<item>Gas Fitter</item>
+		<item>Genealogist</item>
+		<item>General Operative</item>
+		<item>General Practitioner</item>
+		<item>Geologist</item>
+		<item>Geophysicist</item>
+		<item>Glass Worker</item>
+		<item>Glazier</item>
+		<item>Goldsmith</item>
+		<item>Graphic Designer</item>
+		<item>Grave Digger</item>
+		<item>Gravel Merchant</item>
+		<item>Green Keeper</item>
+		<item>Greengrocer</item>
+		<item>Groom</item>
+		<item>Groundsman</item>
+		<item>Guest House</item>
+		<item>Gun Smith</item>
+		<item>Gynaecologist</item>
+		<item>Hair Stylist</item>
+		<item>Hospitality Consultant</item>
+		<item>Human Resources</item>
+		<item>Human Resources</item>
+		<item>Hackney Driver</item>
+		<item>Hairdresser</item>
+		<item>Haulage Contractor</item>
+		<item>Hawker</item>
+		<item>Headteacher</item>
+		<item>Health and</item>
+		<item>Health Board</item>
+		<item>Health Planner</item>
+		<item>Health Visitor</item>
+		<item>Hearing Therapist</item>
+		<item>Heating Contractor</item>
+		<item>Herbalist</item>
+		<item>HGV Driver</item>
+		<item>Hire Car</item>
+		<item>Hod Carrier</item>
+		<item>Home Help</item>
+		<item>Home Maker</item>
+		<item>Homeopath</item>
+		<item>Horologist</item>
+		<item>Horse Breeder</item>
+		<item>Horse Dealer</item>
+		<item>Horse Riding</item>
+		<item>Horse Trader</item>
+		<item>Horticulturalist</item>
+		<item>Hospital Consultant</item>
+		<item>Hospital Doctor</item>
+		<item>Hospital Staff</item>
+		<item>Hostel Staff</item>
+		<item>Hostess</item>
+		<item>House Parent</item>
+		<item>Househusband</item>
+		<item>Housekeeper</item>
+		<item>Housewife</item>
+		<item>Housing Officer</item>
+		<item>IT Engineer</item>
+		<item>IT</item>
+		<item>IT Developer</item>
+		<item>Insurance Representative</item>
+		<item>Insurance Representative</item>
+		<item>Insurance Representative</item>
+		<item>Ice Cream</item>
+		<item>Illustrator</item>
+		<item>Immigration Officer</item>
+		<item>Importer</item>
+		<item>Independent Means</item>
+		<item>Industrial Chemist</item>
+		<item>Industrial Designer</item>
+		<item>Industrial Relations</item>
+		<item>Inland Revenue</item>
+		<item>Inspector</item> 
+		<item>Instrument Maker</item>
+		<item>Insurance Assessor</item>
+		<item>Interior Decorator</item>
+		<item>Interior Designer</item>
+		<item>Interpreter</item>
+		<item>Interviewer</item>
+		<item>Irish Rail</item>
+		<item>Ironmonger</item>
+		<item>Insurance Intermediary</item>
+		<item>Janitor</item>
+		<item>Jeweller</item>
+		<item>Jockey</item>
+		<item>Joiner</item>
+		<item>Journalist</item>
+		<item>Judge</item>
+		<item>Junk Shop</item>
+		<item>Justice Of</item>
+		<item>Keep Fit</item>
+		<item>Kennel Hand</item>
+		<item>Kissagram Person</item>
+		<item>Kitchen Worker</item>
+		<item>Knitter</item>
+		<item>Laboratory Analyst</item>
+		<item>Lagger</item>
+		<item>Liaison Officer</item>
+		<item>Logistics Manager</item>
+		<item>Laboratory Assistant</item>
+		<item>Laboratory Technician</item>
+		<item>Labourer</item>
+		<item>Laminator</item>
+		<item>Land Agent</item>
+		<item>Landlord</item>
+		<item>Landscape Gardener</item>
+		<item>Lathe Operator</item>
+		<item>Laundry Worker</item>
+		<item>Lavatory Attendant</item>
+		<item>Lawyer</item>
+		<item>Leather Worker</item>
+		<item>Lecturer</item>
+		<item>Legal Assistant</item>
+		<item>Legal Executive</item>
+		<item>Legal Secretary</item>
+		<item>Leisure Centre</item>
+		<item>Lens Grinder</item>
+		<item>Librarian</item>
+		<item>Licensee</item>
+		<item>Lifeguard</item>
+		<item>Lift Attendant</item>
+		<item>Line Worker</item>
+		<item>Linesman</item>
+		<item>Linguist</item>
+		<item>Literary Agent</item>
+		<item>Lithographer</item>
+		<item>Locksmith</item>
+		<item>Log Merchant</item>
+		<item>Lorry Driver</item>
+		<item>Loss Adjustor</item>
+		<item>Loss Assessor</item>
+		<item>Lumberjack</item>
+		<item>Machine Operator</item>
+		<item>Machinist</item>
+		<item>Magistrate</item>
+		<item>Maintenance Staff</item>
+		<item>Make Up</item>
+		<item>Manager</item>
+		<item>Manicurist</item>
+		<item>Manufacturing Agent</item>
+		<item>Marine Pilot</item>
+		<item>Market Analyst</item>
+		<item>Market Gardener</item>
+		<item>Market Researcher</item>
+		<item>Market Trader</item>
+		<item>Marketing Staff</item>
+		<item>Martial Arts</item>
+		<item>Masseur</item>
+		<item>Masseuse</item>
+		<item>Mathematician</item>
+		<item>Matron</item>
+		<item>Mechanic</item>
+		<item>Medical Consultant</item>
+		<item>Medical Practitioner</item>
+		<item>Medical Secretary</item>
+		<item>Merchant Seaman</item>
+		<item>Messenger</item>
+		<item>Metal Dealer</item>
+		<item>Metal Polisher</item>
+		<item>Metal Worker</item>
+		<item>Metallurgist</item>
+		<item>Meteorologist</item>
+		<item>Meter Reader</item>
+		<item>Microbiologist</item>
+		<item>Microfilm Operator</item>
+		<item>Midwife</item>
+		<item>Milkman</item>
+		<item>Mill Worker</item>
+		<item>Miller</item>
+		<item>Milliner</item>
+		<item>Miner</item>
+		<item>Mineralologist</item>
+		<item>Minister of</item>
+		<item>Mobile Disco</item>
+		<item>Model</item>
+		<item>Moneylender</item>
+		<item>Mortgage Broker</item>
+		<item>Mortician</item>
+		<item>Motor Mechanic</item>
+		<item>Motor Racing</item>
+		<item>Motor Trader</item>
+		<item>Museum Attendant</item>
+		<item>Music Teacher</item>
+		<item>Musician</item>
+		<item>Nutritional Advisor</item>
+		<item>Nanny</item>
+		<item>Navigator</item>
+		<item>Negotiator</item>
+		<item>Neurologist</item>
+		<item>Newsagent</item>
+		<item>Night Watchman</item>
+		<item>Non Commissioned</item>
+		<item>Not In</item>
+		<item>Nun</item>
+		<item>Nurse</item>
+		<item>Nursery Assistant</item>
+		<item>Nursery Nurse</item>
+		<item>Nurseryman</item>
+		<item>Operations Manager</item>
+		<item>Occupational Therapist</item>
+		<item>Oculist</item>
+		<item>Off Licence</item>
+		<item>Operations Supervisor</item>
+		<item>Optical Assistant</item>
+		<item>Optician</item>
+		<item>Organist</item>
+		<item>Osteopath</item>
+		<item>Outfitter</item>
+		<item>Park Ranger</item>
+		<item>Post Master</item>
+		<item>Post Room</item>
+		<item>Product Manager</item>
+		<item>Project Manger</item>
+		<item>Packer</item>
+		<item>Painter</item>
+		<item>Painter And</item>
+		<item>Pallet Maker</item>
+		<item>Panel Beater</item>
+		<item>Paramedic</item>
+		<item>Park Attendant</item>
+		<item>Park Keeper</item>
+		<item>Party Planner</item>
+		<item>Pathologist</item>
+		<item>Pattern Maker</item>
+		<item>Pattern Weaver</item>
+		<item>Pawnbroker</item>
+		<item>Personal Assistant</item>
+		<item>Personnel Officer</item>
+		<item>Pest Controller</item>
+		<item>Petrol Station</item>
+		<item>Pharmaceutical Technician</item>
+		<item>Pharmacist</item>
+		<item>Photo Engraver</item>
+		<item>Photographer</item>
+		<item>Photographer</item> 
+		<item>Photographer</item> 
+		<item>Physicist</item>
+		<item>Physiologist</item>
+		<item>Physiotherapist</item>
+		<item>Piano Tuner</item>
+		<item>Picker</item>
+		<item>Picture Framer</item>
+		<item>Pilot</item> 
+		<item>Pipe Fitter</item>
+		<item>Pipe Layer</item>
+		<item>Planning Officer</item>
+		<item>Plant Driver</item>
+		<item>Plant Operator</item>
+		<item>Plasterer</item>
+		<item>Plater</item>
+		<item>Playgroup Leader</item>
+		<item>Plumber</item>
+		<item>Pool Attendant</item>
+		<item>Pools Collector</item>
+		<item>Porter</item>
+		<item>Postman</item>
+		<item>Postwoman</item>
+		<item>Potter</item>
+		<item>Press Operator</item>
+		<item>Presser</item>
+		<item>Priest</item>
+		<item>Print Finisher</item>
+		<item>Printer</item>
+		<item>Prison Officer</item>
+		<item>Private Investigator</item>
+		<item>Probation Officer</item>
+		<item>Process Worker</item>
+		<item>Procurator Fiscal</item>
+		<item>Produce Supervisor</item>
+		<item>Producer</item>
+		<item>Professor</item>
+		<item>Projectionist</item>
+		<item>Proof Reader</item>
+		<item>Property Buyer</item>
+		<item>Property Dealer</item>
+		<item>Property Developer</item>
+		<item>Property Valuer</item>
+		<item>Proprietor</item>
+		<item>Prosthesist</item>
+		<item>Psychiatrist</item>
+		<item>Psychologist</item>
+		<item>Psychotherapist</item>
+		<item>Public Relations</item>
+		<item>Publican</item>
+		<item>Publisher</item>
+		<item>Purchaser</item>
+		<item>Purser</item>
+		<item>Quality Controller</item>
+		<item>Quantity Surveyor</item>
+		<item>Quarry Worker</item>
+		<item>Recruitment Manager</item>
+		<item>Recruitment Consultant</item>
+		<item>Refrigeration Technician</item>
+		<item>Rabbi</item>
+		<item>Radio Presenter</item>
+		<item>Radio Producer</item>
+		<item>Radiographer</item>
+		<item>Radiologist</item>
+		<item>Receptionist</item>
+		<item>Rector</item>
+		<item>Reflexologist</item>
+		<item>Refuse Collector</item>
+		<item>Registrar</item>
+		<item>Reporter</item>
+		<item>Researcher</item>
+		<item>Restaurateur</item>
+		<item>Restorer</item>
+		<item>Retired</item>
+		<item>Revenue Officer</item>
+		<item>Rig Worker</item>
+		<item>Rigger</item>
+		<item>Riveter</item>
+		<item>Road Sweeper</item>
+		<item>Road Worker</item>
+		<item>Roofer</item>
+		<item>Shop Manager</item>
+		<item>Sales</item> 
+		<item>Sales</item> 
+		<item>Sales</item> 
+		<item>Sales</item> 
+		<item>Sales</item> 
+		<item>Saddler</item>
+		<item>Safety Officer</item>
+		<item>Sail Maker</item>
+		<item>Sailor</item>
+		<item>Sales Administrator</item>
+		<item>Sales Agent</item>
+		<item>Sales Support</item>
+		<item>Sand Blaster</item>
+		<item>Sand</item>
+		<item>Saw Miller</item>
+		<item>Scaffolder</item>
+		<item>School Crossing</item>
+		<item>Scientist</item>
+		<item>Scrap Dealer</item>
+		<item>Screen Printer</item>
+		<item>Screen Writer</item>
+		<item>Script Writer</item>
+		<item>Sculptor</item>
+		<item>Sea Captain</item>
+		<item>Seaman</item>
+		<item>Seamstress</item>
+		<item>Second Hand</item>
+		<item>Secretary</item>
+		<item>Secretary and</item>
+		<item>Security Guard</item>
+		<item>Security Officer</item>
+		<item>Seedsman</item>
+		<item>Senator</item>
+		<item>Servant</item>
+		<item>Sexton</item>
+		<item>Sheet Metal</item>
+		<item>Shelf Filler</item>
+		<item>Sheriff</item>
+		<item>Ship Builder</item>
+		<item>Shipwright</item>
+		<item>Shoe Repairer</item>
+		<item>Shop Assistant</item>
+		<item>Shop Fitter</item>
+		<item>Shop Keeper</item>
+		<item>Shot Blaster</item>
+		<item>Showman</item>
+		<item>Shunter</item>
+		<item>Signalman</item>
+		<item>Signwriter</item>
+		<item>Silversmith</item>
+		<item>Smallholder</item>
+		<item>Smelter</item>
+		<item>Social Worker</item>
+		<item>Solicitor</item>
+		<item>Song Writer</item>
+		<item>Sorter</item>
+		<item>Speech Therapist</item>
+		<item>Spinner</item>
+		<item>Sports Centre</item>
+		<item>Sports Centre</item>
+		<item>Sports Coach</item>
+		<item>Sportsman</item>
+		<item>Spray Painter</item>
+		<item>Stable Hand</item>
+		<item>Stage Mover</item>
+		<item>Statistician</item>
+		<item>Steel Erector</item>
+		<item>Steel Worker</item>
+		<item>Steeplejack</item>
+		<item>Stenographer</item>
+		<item>Stevedore</item>
+		<item>Stock Controller</item>
+		<item>Stockbroker</item>
+		<item>Stockman</item>
+		<item>Stonemason</item>
+		<item>Storeman</item>
+		<item>Street Entertainer</item>
+		<item>Street Trader</item>
+		<item>Stud Farm</item>
+		<item>Stud Hand</item>
+		<item>Stud Manager</item>
+		<item>Student</item>
+		<item>Student Nurse</item>
+		<item>Student Teacher</item>
+		<item>Supermarket Assistant</item>
+		<item>Supervisor</item>
+		<item>Supply Teacher</item>
+		<item>Surgeon</item>
+		<item>Surveyor</item>
+		<item>Surveyor</item> 
+		<item>Systems Analyst</item>
+		<item>Software Developer</item>
+		<item>Tram Driver</item>
+		<item>Tailor</item>
+		<item>Tanner</item>
+		<item>Tarmacadam Contractor</item>
+		<item>Tax Consultant</item>
+		<item>Tax Inspector</item>
+		<item>Taxi Driver</item>
+		<item>Taxidermist</item>
+		<item>TD</item>
+		<item>Tea Blender</item>
+		<item>Tea Taster</item>
+		<item>Teacher</item>
+		<item>Teachers Assistant</item>
+		<item>Technician</item>
+		<item>Telephonist</item>
+		<item>Telesales Person</item>
+		<item>Television Presenter</item>
+		<item>Telex Operator</item>
+		<item>Textile Printer</item>
+		<item>Textile Worker</item>
+		<item>Thatcher</item>
+		<item>Theatrical Agent</item>
+		<item>Therapist</item>
+		<item>Ticket Inspector</item>
+		<item>Tiler</item>
+		<item>Tobacconist</item>
+		<item>Tool Maker</item>
+		<item>Tool Setter</item>
+		<item>Tour Courier</item>
+		<item>Tour Guide</item>
+		<item>Town Planner</item>
+		<item>Toy Maker</item>
+		<item>Tractor Driver</item>
+		<item>Trade Union</item>
+		<item>Trading Standards</item>
+		<item>Traffic Warden</item>
+		<item>Train Driver</item>
+		<item>Trainer</item>
+		<item>Training Officer</item>
+		<item>Translator</item>
+		<item>Transport Controller</item>
+		<item>Transport Officer</item>
+		<item>Travel Agent</item>
+		<item>Travel Consultant</item>
+		<item>Travel Courier</item>
+		<item>Treasurer</item>
+		<item>Tree Feller</item>
+		<item>Tree Surgeon</item>
+		<item>Trinity House</item>
+		<item>Tunneller</item>
+		<item>Turf Accountant</item>
+		<item>Turner</item>
+		<item>Tutor</item>
+		<item>Typesetter</item>
+		<item>Typist</item>
+		<item>Telesales Agent</item>
+		<item>Undertaker</item>
+		<item>Underwriter</item>
+		<item>Unemployed</item>
+		<item>Upholsterer</item>
+		<item>Usher</item>
+		<item>Valuer</item>
+		<item>Van Driver</item>
+		<item>VDU Operator</item>
+		<item>Vehicle Assessor</item>
+		<item>Verger</item>
+		<item>Veterinary Surgeon</item>
+		<item>Vicar</item>
+		<item>Voluntary Worker</item>
+		<item>Water Curator</item>
+		<item>Web Designer</item>
+		<item>Wages Clerk</item>
+		<item>Warehouseman</item>
+		<item>Waste Dealer</item>
+		<item>Waste Paper</item>
+		<item>Watchmaker</item>
+		<item>Weaver</item>
+		<item>Welder</item>
+		<item>Welfare Officer</item>
+		<item>Welfare Rights</item>
+		<item>Wheel Clamper</item>
+		<item>Wholesaler</item>
+		<item>Window Cleaner</item>
+		<item>Window Dresser</item>
+		<item>Windscreen Fitter</item>
+		<item>Wine Merchant</item>
+		<item>Wood Worker</item>
+		<item>Wool Sorter</item>
+		<item>Writer</item>
+		<item>Waiting Staff</item>
+		<item>Youth Hostel</item>
+		<item>Youth Worker</item>
+		<item>Zoo Keeper</item>
+		<item>Zoologist</item>
+		<item>Spouse</item>
+		<item>Other</item>
+    </string-array>
 
 </resources>

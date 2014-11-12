@@ -8,9 +8,88 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.GUI.assignment1.MainActivity" >
 
-    <TextView
+    <EditText 
+        android:id="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:inputType="textCapWords"
+        />
+    
+    <TextView 
+        android:id="@+id/genderLabel"
+        android:text="@string/gender"
+        android:textSize="18dp"
+        android:layout_below="@+id/name"
+        android:layout_alignParentLeft="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:paddingTop="7dp"
+        />
+    
+    <RadioGroup android:id="@+id/gender"
+		android:orientation="horizontal"
+		android:layout_below="@+id/name"
+		android:layout_alignParentRight="true"
+		android:layout_toRightOf="@+id/genderLabel"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/radio_margin">
+		<RadioButton
+			android:id="@+id/male"
+			android:text="@string/male" />
+		<RadioButton
+			android:id="@+id/female"
+			android:text="@string/female" />
+	</RadioGroup>
+	
+    <EditText 
+        android:id="@+id/age"
+        android:layout_below="@+id/gender"
+        android:layout_alignParentLeft="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/age"
+        android:inputType="number"
+        />
+    
+    <AutoCompleteTextView
+        android:id="@+id/jobEdit"
+        android:layout_below="@+id/age"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/job"
+        android:inputType="textAutoComplete"
+        />
+    
+    <Spinner 
+        android:id="@+id/jobSpinner"
+        android:layout_below="@+id/age"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    
+    <EditText 
+        android:id="@+id/moneyToSpend"
+        android:layout_below="@+id/jobSpinner"
+        android:layout_alignParentLeft="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/availMoney"
+        android:inputType="numberDecimal"
+        />
+    
+    <EditText 
+        android:id="@+id/email"
+        android:layout_below="@+id/moneyToSpend"
+        android:layout_alignParentLeft="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        />
 
 </RelativeLayout>
