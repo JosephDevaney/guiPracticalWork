@@ -8,6 +8,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.GUI.assignment1.MainActivity" >
 
+
     <EditText 
         android:id="@+id/name"
         android:layout_alignParentTop="true"
@@ -58,7 +59,7 @@
         android:id="@+id/jobEdit"
         android:layout_below="@+id/age"
         android:layout_alignParentLeft="true"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:hint="@string/job"
         android:inputType="textAutoComplete"
@@ -66,9 +67,9 @@
     
     <Spinner 
         android:id="@+id/jobSpinner"
-        android:layout_below="@+id/age"
-        android:layout_alignParentRight="true"
-        android:layout_width="wrap_content"
+        android:layout_below="@+id/jobEdit"
+        android:layout_alignParentLeft="true"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         />
     
@@ -90,6 +91,15 @@
         android:layout_height="wrap_content"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
+        />
+    
+    <Button 
+        android:id="@+id/submitBut"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
         />
 
 </RelativeLayout>

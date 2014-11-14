@@ -13,7 +13,107 @@
     <string name="job">Occupation</string>
     <string name="gender">Gender</string>
     <string name="email">Email</string>
+    <string name="submit">Submit</string>
     
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    
+    <string-array name="itemList">
+        <item>Baking Powder</item>
+		<item>Baking Soda</item>
+		<item>Brown Sugar</item>
+		<item>Brownie Mix</item>
+		<item>Cake Mix</item>
+		<item>Cocoa</item>
+		<item>Cornstarch</item>
+		<item>Flour</item>
+		<item>Sugar</item>
+		<item>Vanilla Extract</item>
+		<item>Biscuits</item>
+		<item>Bread</item>
+		<item>Buns</item>
+		<item>Rolls</item>
+		<item>Soup</item>
+		<item>Canned Tuna</item>
+		<item>BBQ Sauce</item>
+		<item>Cooking Spray</item>
+		<item>Honey</item>
+		<item>Horseradish</item>
+		<item>Hot sauce</item>
+		<item>Jelly</item>
+		<item>Ketchup</item>
+		<item>Mayonnaise</item>
+		<item>Mustard</item>
+		<item>Olive Oil</item>
+		<item>Peanut Butter</item>
+		<item>Salad Dressing</item>
+		<item>Salsa</item>
+		<item>Soy Sauce</item>
+		<item>Vegetable Oil</item>
+		<item>Worcestershire</item>
+		<item>Butter</item>
+		<item>Cheese</item>
+		<item>Cottage Cheese</item>
+		<item>Cream</item>
+		<item>Cream Cheese</item>
+		<item>Eggs</item>
+		<item>Milk</item>
+		<item>Sour Cream</item>
+		<item>Yogurt</item>
+		<item>Bottled Water</item>
+		<item>Coffee</item>
+		<item>Juice</item>
+		<item>Soda Pop</item>
+		<item>Sports Drinks</item>
+		<item>Tea</item>
+		<item>Select: All | None Frozen</item>
+		<item>French Fries</item>
+		<item>Frozen Vegetables</item>
+		<item>Ice Cream</item>
+		<item>Pizza</item>
+		<item>Pasta</item>
+		<item>Rice</item>
+		<item>Spaghetti Sauce</item>
+		<item>Beef</item>
+		<item>Chicken</item>
+		<item>Fish</item>
+		<item>Pork</item>
+		<item>Foil</item>
+		<item>Freezer Bags</item>
+		<item>Kitchen Bags</item>
+		<item>Paper Towels</item>
+		<item>Plastic Wrap</item>
+		<item>Sandwich Bags</item>
+		<item>Storage Bags</item>
+		<item>Tissues</item>
+		<item>Toilet Paper</item>
+		<item>Trash Bags</item>
+		<item>Yard Bags</item>
+		<item>Apples</item>
+		<item>Asparagus</item>
+		<item>Bananas</item>
+		<item>Berries</item>
+		<item>Broccoli</item>
+		<item>Cabbage</item>
+		<item>Carrots</item>
+		<item>Cauliflower</item>
+		<item>Celery</item>
+		<item>Corn</item>
+		<item>Garlic</item>
+		<item>Grapes</item>
+		<item>Lemons</item>
+		<item>Lettuce</item>
+		<item>Limes</item>
+		<item>Melons</item>
+		<item>Mushrooms</item>
+		<item>Nectarines</item>
+		<item>Onions</item>
+		<item>Oranges</item>
+		<item>Peaches</item>
+		<item>Pears</item>
+		<item>Plums</item>
+		<item>Tomatoes</item>
+    </string-array>
     
     <string-array name="jobList">
         <item>Accounts Assistant</item>
