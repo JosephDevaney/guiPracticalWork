@@ -2,13 +2,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
+    <!--Android:layout_weight attribute taken from an example on Stack Overflow: 
+    http://stackoverflow.com/questions/4936553/android-how-can-you-align-a-button-at-the-bottom-and-listview-above -->
     <ListView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"	
         android:cacheColorHint="#00000000"
         android:id="@android:id/list"
     />
+    
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/checkout"
+        />
     
 
 </LinearLayout>

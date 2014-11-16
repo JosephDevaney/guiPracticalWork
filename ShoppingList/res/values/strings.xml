@@ -17,6 +17,7 @@
     
     <string name="plus">+</string>
     <string name="minus">-</string>
+    <string name="checkout">Checkout</string>
     
     <string-array name="itemList">
         <item>Baking Powder</item>
@@ -66,7 +67,6 @@
 		<item>Soda Pop</item>
 		<item>Sports Drinks</item>
 		<item>Tea</item>
-		<item>Select: All | None Frozen</item>
 		<item>French Fries</item>
 		<item>Frozen Vegetables</item>
 		<item>Ice Cream</item>
