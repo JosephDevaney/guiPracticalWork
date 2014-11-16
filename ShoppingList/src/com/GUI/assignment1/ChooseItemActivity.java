@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class ChooseItemActivity extends ListActivity
@@ -42,37 +43,43 @@ public class ChooseItemActivity extends ListActivity
 			{
 				v = inflater.inflate(R.layout.row, parent, false);
 			}
-/*
-			TextView item = (TextView) v.findViewById(R.id.item);
-			TextView price = (TextView) v.findViewById(R.id.price);
-			Button plus = (Button) v.findViewById(R.id.plus);
-			EditText amount = (EditText) v.findViewById(R.id.num);
-			Button minus = (Button) v.findViewById(R.id.minus);*/
-			rows[pos].item = (TextView) v.findViewById(R.id.item);
+					
+			
+			final TextView item = (TextView) v.findViewById(R.id.item);
+			final TextView price = (TextView) v.findViewById(R.id.price);
+			final Button plus = (Button) v.findViewById(R.id.plus);
+			final EditText amount = (EditText) v.findViewById(R.id.num);
+			final Button minus = (Button) v.findViewById(R.id.minus);
+			
+			/*rows[pos].item = (TextView) v.findViewById(R.id.item);
 			rows[pos].price = (TextView) v.findViewById(R.id.price);
 			rows[pos].plus = (Button) v.findViewById(R.id.plus);
 			rows[pos].amount = (EditText) v.findViewById(R.id.num);
-			rows[pos].minus = (Button) v.findViewById(R.id.minus);
+			rows[pos].minus = (Button) v.findViewById(R.id.minus);*/
 			
 
-			rows[pos].item.setText(data[pos]);
-			rows[pos].price.setText("4.99");	//make random
-			rows[pos].plus.setOnClickListener(new OnClickListener() {
+			/*rows[pos].*/item.setText(data[pos]);
+			/*rows[pos].*/price.setText("4.99");	//make random
+			/*rows[pos].*/plus.setOnClickListener(new OnClickListener() {
 				
 				@Override
 				public void onClick(View v) {
 					// TODO Auto-generated method stub
 					
+					LinearLayout layout = (LinearLayout)v.getParent();
+					
+					final EditText amount = (EditText) layout.findViewById(R.id.num);
+					
 					
 					String amt = rows[pos].amount.getText().toString();
 					int iAmt = Integer.parseInt(amt);
 					iAmt++;
-					rows[pos].amount.setText(Integer.toString(iAmt));
+					/*rows[pos].*/amount.setText(Integer.toString(iAmt));
 				}
 			});
 			
 			
-			rows[pos].amount.setText("0");
+			/*rows[pos].*/amount.setText("0");
 			return v;
 		}
 	}
