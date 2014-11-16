@@ -1,5 +1,7 @@
 package com.GUI.assignment1;
 
+import java.util.ArrayList;
+
 import android.app.ListActivity;
 import android.content.Context;
 import android.os.Bundle;
@@ -18,7 +20,8 @@ public class ChooseItemActivity extends ListActivity
 	{
 		Context context;
 	    String[] data;
-	    Row[] rows;
+	    //Item[] items;
+	    ArrayList<Item> items;
 	    private LayoutInflater inflater = null;
 
 		@SuppressWarnings("unchecked")
@@ -29,7 +32,15 @@ public class ChooseItemActivity extends ListActivity
 			this.context = context;
 			this.data = data;
 			
-			rows = new Row[data.length];
+			items = new ArrayList<>();
+			for (int i = 0; i < data.length; i++)
+			{
+				Item it = new Item();
+				it.setName(data[i]);
+				it.setPrice(4.99);
+				it.setAmount(0);
+				items.add(it);
+			}
 			
 			inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		}
@@ -42,37 +53,31 @@ public class ChooseItemActivity extends ListActivity
 			{
 				v = inflater.inflate(R.layout.row, parent, false);
 			}
-/*
+
 			TextView item = (TextView) v.findViewById(R.id.item);
 			TextView price = (TextView) v.findViewById(R.id.price);
 			Button plus = (Button) v.findViewById(R.id.plus);
 			EditText amount = (EditText) v.findViewById(R.id.num);
-			Button minus = (Button) v.findViewById(R.id.minus);*/
-			rows[pos].item = (TextView) v.findViewById(R.id.item);
-			rows[pos].price = (TextView) v.findViewById(R.id.price);
-			rows[pos].plus = (Button) v.findViewById(R.id.plus);
-			rows[pos].amount = (EditText) v.findViewById(R.id.num);
-			rows[pos].minus = (Button) v.findViewById(R.id.minus);
-			
+			Button minus = (Button) v.findViewById(R.id.minus);
 
-			rows[pos].item.setText(data[pos]);
-			rows[pos].price.setText("4.99");	//make random
-			rows[pos].plus.setOnClickListener(new OnClickListener() {
+			item.setText(items.get(pos).getName());
+			price.setText(Double.toString(items.get(pos).getPrice()));	//make random
+			plus.setOnClickListener(new OnClickListener() {
 				
 				@Override
 				public void onClick(View v) {
 					// TODO Auto-generated method stub
 					
+					int amt = items.get(pos).getAmount();
+					amt++;
+					items.get(pos).setAmount(amt);
+					notifyDataSetChanged();
 					
-					String amt = rows[pos].amount.getText().toString();
-					int iAmt = Integer.parseInt(amt);
-					iAmt++;
-					rows[pos].amount.setText(Integer.toString(iAmt));
 				}
 			});
 			
 			
-			rows[pos].amount.setText("0");
+			amount.setText(Integer.toString(items.get(pos).getAmount()));
 			return v;
 		}
 	}
