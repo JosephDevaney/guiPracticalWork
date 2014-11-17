@@ -14,6 +14,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity implements View.OnClickListener
 {
@@ -36,7 +37,7 @@ public class MainActivity extends Activity implements View.OnClickListener
 		gender = (RadioGroup) findViewById(R.id.gender);
 		male = (RadioButton) findViewById(R.id.male);
 		female = (RadioButton) findViewById(R.id.female);
-		age = (EditText) findViewById(R.id.name);
+		age = (EditText) findViewById(R.id.age);
 		jobs = (AutoCompleteTextView) findViewById(R.id.jobEdit);
 		jobList = (Spinner) findViewById(R.id.jobSpinner);
 		availSpend = (EditText) findViewById(R.id.moneyToSpend);
@@ -76,8 +77,38 @@ public class MainActivity extends Activity implements View.OnClickListener
 	public void onClick(View view) 
 	{
 		// TODO Auto-generated method stub
-		Intent chooseItems = new Intent(MainActivity.this, ChooseItemActivity.class);/*
-		chooseItems.putExtra("name", name.getText());
+		if (checkInput())
+		{
+			User u;
+			
+			String name1 = name.getText().toString();
+			String gender;
+			if (male.isChecked())
+			{
+				gender = male.getText().toString();
+			}
+			else
+			{
+				gender = female.getText().toString();
+			}
+			int age = Integer.parseInt(this.age.getText().toString());
+			String job = jobs.getText().toString();
+			double money = Double.parseDouble(availSpend.getText().toString());
+			String email = this.email.getText().toString();
+			
+			u = new User(name1, gender, age, job, money, email);
+		
+		
+			Intent chooseItems = new Intent(MainActivity.this, ChooseItemActivity.class);
+			chooseItems.putExtra("user", u);
+			startActivity(chooseItems);
+		}
+		else
+		{
+			Toast.makeText(getApplicationContext(), "@string/inputError", Toast.LENGTH_LONG).show();
+		}
+		
+		/*chooseItems.putExtra("name", name.getText());
 		if (male.isChecked())
 		{
 			chooseItems.putExtra("gender", male.getText());
@@ -91,8 +122,36 @@ public class MainActivity extends Activity implements View.OnClickListener
 		chooseItems.putExtra("money", availSpend.getText());
 		chooseItems.putExtra("email", email.getText());*/
 		
-		startActivity(chooseItems);
 	}
-
 	
+	public Boolean checkInput()
+	{
+		if (name.getText().toString() == "")
+		{
+			return false;
+		}
+		if (!(male.isChecked() || female.isChecked()))
+		{
+			return false;
+		}
+		if (age.getText().toString() == "")
+		{
+			return false;
+		}
+		if (jobs.getText().toString() == "")
+		{
+			return false;
+		}
+		if (availSpend.getText().toString() == "")
+		{
+			return false;
+		}
+		if (email.getText().toString() == "")
+		{
+			return false;
+		}
+		
+		return true;
+	}
+		
 }

@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
 public class ChooseItemActivity extends ListActivity
@@ -20,6 +21,7 @@ public class ChooseItemActivity extends ListActivity
 	public class CustomAdapter extends ArrayAdapter<String> 
 	{
 		Context context;
+		User user;
 	    String[] data;
 	    //Item[] items;
 	    ArrayList<Item> items;
@@ -32,6 +34,7 @@ public class ChooseItemActivity extends ListActivity
 			super(context, resource, textViewResourceId, data);
 			// TODO Auto-generated constructor stub
 			this.context = context;
+			user = getIntent().getExtras().getParcelable("user");
 			this.data = data;
 			
 			items = new ArrayList<>();
@@ -122,6 +125,12 @@ public class ChooseItemActivity extends ListActivity
 		String[] itemList = getResources().getStringArray(R.array.itemList);
 		CustomAdapter days = new CustomAdapter(this, R.layout.row, R.id.item, itemList);
 		setListAdapter(days);
+		
+	}
+	
+	@Override
+	protected void onListItemClick(ListView l, View view, int pos, long id)
+	{
 		
 	}
 
