@@ -23,6 +23,7 @@ public class ChooseItemActivity extends ListActivity
 	    String[] data;
 	    //Item[] items;
 	    ArrayList<Item> items;
+	    ArrayList<Item> chosenItems;
 	    private LayoutInflater inflater = null;
 
 		@SuppressWarnings("unchecked")
@@ -42,6 +43,8 @@ public class ChooseItemActivity extends ListActivity
 				it.setAmount(0);
 				items.add(it);
 			}
+			
+			chosenItems = new ArrayList<>();
 			
 			inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		}
@@ -71,16 +74,41 @@ public class ChooseItemActivity extends ListActivity
 				public void onClick(View v) {
 					// TODO Auto-generated method stub
 					
-
-					int amt = items.get(pos).getAmount();
+					Item i = items.get(pos);
+					int amt = i.getAmount();
+					if (amt == 0) 
+					{
+						chosenItems.add(i);
+					}
 					amt++;
-					items.get(pos).setAmount(amt);
+					i.setAmount(amt);
 					notifyDataSetChanged();
 			
 				}
 			});
 
 			amount.setText(Integer.toString(items.get(pos).getAmount()));
+			
+			minus.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View v) {
+					// TODO Auto-generated method stub
+					
+					Item i = items.get(pos);
+					int amt = i.getAmount();
+					
+					if (amt > 0)
+					{
+						if (amt == 1) 
+						{
+							chosenItems.remove(i);
+						}
+						i.setAmount(--amt);
+						notifyDataSetChanged();
+					}					
+				}
+			});
 			return v;
 		}
 	}
