@@ -44,6 +44,11 @@ public class MainActivity extends Activity implements View.OnClickListener
 		email = (EditText) findViewById(R.id.email);
 		submit = (Button) findViewById(R.id.submitBut);
 		
+		
+		/**
+		 * Spinner code created from examples on the Android documentation at:
+		 * http://developer.android.com/guide/topics/ui/controls/spinner.html
+		 */
 		ArrayAdapter<CharSequence> jobListAdapter = ArrayAdapter.createFromResource(this, R.array.jobList, android.R.layout.simple_spinner_item);
 		jobListAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		
@@ -51,7 +56,7 @@ public class MainActivity extends Activity implements View.OnClickListener
 		jobList.setOnItemSelectedListener(new OnItemSelectedListener() {
 
 			@Override
-			public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) 
+			public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) 	//If an job is selected from the spinner, it gets put into the text of the EditText
 			{
 				String job = (String) parent.getItemAtPosition(pos);
 				jobs.setText(job);
@@ -64,10 +69,11 @@ public class MainActivity extends Activity implements View.OnClickListener
 				
 			}
 		});
+		//End Spinner Reference
 		
-		String[] jobList = getResources().getStringArray(R.array.jobList);
+		String[] jobList = getResources().getStringArray(R.array.jobList);	//get the array from the resources file
 		ArrayAdapter<String> jobsComplete = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, jobList);
-		jobs.setAdapter(jobsComplete);
+		jobs.setAdapter(jobsComplete);	//set adapter for the autocomplete functionality
 		
 		
 		submit.setOnClickListener(this);
@@ -100,7 +106,7 @@ public class MainActivity extends Activity implements View.OnClickListener
 		
 		
 			Intent chooseItems = new Intent(MainActivity.this, ChooseItemActivity.class);
-			chooseItems.putExtra("user", u);
+			chooseItems.putExtra("user", u);	//add the user object to the new intent using the parcelable functionality
 			startActivity(chooseItems);
 		}
 		else
@@ -110,34 +116,39 @@ public class MainActivity extends Activity implements View.OnClickListener
 		
 	}
 	
+	
+	/**
+	 * checkInput() checks the input fields to ensure they have been filled out and returns false if any are empty
+	 * @return
+	 */
 	public Boolean checkInput()
 	{
-		if (name.getText().toString() == "")
-		{
+		if (name.getText().toString().trim().length() == 0)	//get the text, convert it to a string, user trim() to get rid of leading/trailing whitespace and check the length
+		{													//if length == 0, field is empty
 			return false;
 		}
 		if (!(male.isChecked() || female.isChecked()))
 		{
 			return false;
 		}
-		if (age.getText().toString() == "")
+		if (age.getText().toString().trim().length() == 0)
 		{
 			return false;
 		}
-		if (jobs.getText().toString() == "")
+		if (jobs.getText().toString().trim().length() == 0)
 		{
 			return false;
 		}
-		if (availSpend.getText().toString() == "")
+		if (availSpend.getText().toString().trim().length() == 0)
 		{
 			return false;
 		}
-		if (email.getText().toString() == "")
+		if (email.getText().toString().trim().length() == 0)
 		{
 			return false;
 		}
 		
-		return true;
+		return true;	//All fields are filled out
 	}
 		
 }

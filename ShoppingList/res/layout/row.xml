@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:layout_centerVertical="true"
         android:layout_marginLeft="5dp"
         />
@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toLeftOf="@+id/plus"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:layout_centerVertical="true"
         />
     

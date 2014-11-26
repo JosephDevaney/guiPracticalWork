@@ -32,6 +32,13 @@ public class User implements Parcelable
 		setEmail(e);
 	}
 
+	/**
+	 * Parcelable Functionality taken from Android API Documentation at:
+	 * http://developer.android.com/reference/android/os/Parcelable.html
+	 * 
+	 * Parcelable Constructor
+	 * Gets data from parcel object on a FIFO basis
+	 */
 	public User(Parcel in) 
 	{
 		setName(in.readString());
@@ -41,6 +48,7 @@ public class User implements Parcelable
 		setMoney(in.readDouble());
 		setEmail(in.readString());
 	}
+	//End Parcelable Constructor Reference
 
 	public String getName() {
 		return name;
@@ -89,35 +97,6 @@ public class User implements Parcelable
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	public Boolean checkFields()
-	{
-		if (getName() == "" || getName() == null)
-		{
-			return false;
-		}
-		if (getGender() == "" || getGender() == null)
-		{
-			return false;
-		}
-		if (Integer.toString(getAge()) == "" || Integer.toString(getAge()) == null)
-		{
-			return false;
-		}
-		if (getJob() == "" || getJob() == null)
-		{
-			return false;
-		}
-		if (Double.toString(getMoney()) == "" || Double.toString(getMoney()) == null)
-		{
-			return false;
-		}
-		if (getEmail() == "" || getEmail() == null)
-		{
-			return null;
-		}
-		return true;
-	}
 
 	/**
 	 * Parcelable Functionality taken from Android API Documentation at:
@@ -133,7 +112,7 @@ public class User implements Parcelable
 	}
 
 	@Override
-	public void writeToParcel(Parcel out, int flags) 
+	public void writeToParcel(Parcel out, int flags) //Write data to the parcel object. Works on FIFO basis
 	{
 		// TODO Auto-generated method stub
 		out.writeString(getName());
@@ -160,4 +139,5 @@ public class User implements Parcelable
 			return new User[size];
 		}
 	};
+	//End Reference Parcelable
 }

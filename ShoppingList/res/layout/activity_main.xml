@@ -25,7 +25,7 @@
     <TextView 
         android:id="@+id/genderLabel"
         android:text="@string/gender"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:layout_below="@+id/name"
         android:layout_alignParentLeft="true"
         android:layout_width="wrap_content"
