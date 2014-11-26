@@ -8,6 +8,8 @@ import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -32,7 +34,6 @@ public class ChooseItemActivity extends ListActivity
 	    String[] data;
 	    private LayoutInflater inflater = null;
 
-		@SuppressWarnings("unchecked")
 		public CustomAdapter(Context context, int resource, int textViewResourceId, String[] data) 
 		{
 			super(context, resource, textViewResourceId, data);
@@ -103,6 +104,52 @@ public class ChooseItemActivity extends ListActivity
 			});
 
 			amount.setText(Integer.toString(items.get(pos).getAmount()));
+			amount.addTextChangedListener(new TextWatcher() {
+				
+				@Override
+				public void onTextChanged(CharSequence s, int start, int before, int count)
+				{
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public void beforeTextChanged(CharSequence s, int start, int count,
+						int after)
+				{
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public void afterTextChanged(Editable s)
+				{
+					// TODO Auto-generated method stub
+					int num;
+					String amt = s.toString();
+					Item i = items.get(pos);
+					
+					try
+					{
+						num = Integer.parseInt(amt);
+					} 
+					catch (NumberFormatException e)
+					{
+						num = 1;
+					}
+					
+					if (num > 0 && !(chosenItems.contains(i)))
+					{
+						chosenItems.add(i);
+					}
+					else if (num == 0 && chosenItems.contains(i))
+					{
+						chosenItems.remove(i);
+					}
+					i.setAmount(num);
+					//notifyDataSetChanged();
+				}
+			});
 			
 			minus.setOnClickListener(new OnClickListener() {
 				

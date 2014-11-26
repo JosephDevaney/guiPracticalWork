@@ -1,13 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
-    <TextView 
-        android:id="@+id/reviewText1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        />
+    android:layout_height="match_parent" >
 
-</LinearLayout>
+	<TableLayout 
+	    android:id="@+id/review_items"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+		android:stretchColumns="*"
+		android:shrinkColumns="0" >
+		
+	    <TableRow
+	        android:id="@+id/headings" >
+	        <TextView 
+	            android:id="@+id/name_H"
+	            android:text="@string/nameHead"
+	            android:textStyle="bold" />
+	        <TextView 
+	            android:id="@+id/qty_H"
+	            android:text="@string/qtyHead"
+	            android:textStyle="bold" />
+	        <TextView 
+	            android:id="@+id/price_H"
+	            android:text="@string/priceHead"
+	            android:textStyle="bold" />
+	        <TextView 
+	            android:id="@+id/vat_H"
+	            android:text="@string/vatHead"
+	            android:textStyle="bold" />
+	        <TextView 
+	            android:id="@+id/total_H"
+	            android:text="@string/totalHead"
+	            android:textStyle="bold" />
+	    </TableRow>
+	    
+	    
+	
+	</TableLayout>
+
+</ScrollView>

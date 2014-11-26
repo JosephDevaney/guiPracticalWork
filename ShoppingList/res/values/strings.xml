@@ -22,6 +22,12 @@
     <string name="minus">-</string>
     <string name="checkout">Checkout</string>
     
+    <string name="nameHead">Name</string>
+    <string name="qtyHead">Qty</string>
+    <string name="priceHead">Price</string>
+    <string name="vatHead">Vat @21%</string>
+    <string name="totalHead">Total</string>
+    
     <string-array name="itemList">
         <item>Baking Powder</item>
 		<item>Baking Soda</item>
