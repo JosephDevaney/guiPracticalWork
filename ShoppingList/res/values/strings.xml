@@ -2,6 +2,7 @@
 <resources>
     
     <string name="inputError">Please Fill All Fields</string>
+    <string name="spentTooMuch">You have overspent by</string>
 
     <string name="app_name">ShoppingList</string>
     <string name="hello_world">Hello world!</string>

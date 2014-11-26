@@ -18,6 +18,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ChooseItemActivity extends ListActivity
 {
@@ -145,10 +146,22 @@ public class ChooseItemActivity extends ListActivity
 			public void onClick(View v)
 			{
 				// TODO Auto-generated method stub
-				Intent review = new Intent(ChooseItemActivity.this, ReviewItemActivity.class);
-				review.putParcelableArrayListExtra("chosenItems", chosenItems);
-				review.putExtra("user", user);
-				startActivity(review);
+				double moneyDiff = budgetDifference();
+				if (moneyDiff >= 0)
+				{
+					Intent review = new Intent(ChooseItemActivity.this, ReviewItemActivity.class);
+					review.putParcelableArrayListExtra("chosenItems", chosenItems);
+					review.putExtra("user", user);
+					startActivity(review);
+				}
+				else
+				{
+					DecimalFormat df = new DecimalFormat("€###0.00");
+					String message = getString(R.string.spentTooMuch) + " " + df.format(Math.abs(moneyDiff));
+					Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();;
+				}
+				
+				
 			}
 		});
 		
@@ -160,6 +173,18 @@ public class ChooseItemActivity extends ListActivity
 	protected void onListItemClick(ListView l, View view, int pos, long id)
 	{
 		
+	}
+	
+	
+	protected double budgetDifference()
+	{
+		double total = 0;
+		for(Item item : chosenItems)
+		{
+			total += (item.getPrice() * item.getAmount());
+		}
+		
+		return user.getMoney() - total;
 	}
 
 }

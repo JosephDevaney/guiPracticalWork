@@ -105,22 +105,8 @@ public class MainActivity extends Activity implements View.OnClickListener
 		}
 		else
 		{
-			Toast.makeText(getApplicationContext(), "@string/inputError", Toast.LENGTH_LONG).show();
+			Toast.makeText(getApplicationContext(), getString(R.string.inputError), Toast.LENGTH_LONG).show();
 		}
-		
-		/*chooseItems.putExtra("name", name.getText());
-		if (male.isChecked())
-		{
-			chooseItems.putExtra("gender", male.getText());
-		}
-		else
-		{
-			chooseItems.putExtra("gender", female.getText());
-		}
-		chooseItems.putExtra("age", age.getText());
-		chooseItems.putExtra("job", jobs.getText());
-		chooseItems.putExtra("money", availSpend.getText());
-		chooseItems.putExtra("email", email.getText());*/
 		
 	}
 	
